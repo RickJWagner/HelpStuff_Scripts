@@ -1,0 +1,2 @@
+
+tail -f server.log | awk '/jms msg/ { system("jstack 4755 >> jstacks.out")}'
